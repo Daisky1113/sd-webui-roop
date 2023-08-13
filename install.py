@@ -49,6 +49,6 @@ with open(req_file) as file:
                     )
 
         except Exception as e:
-            print(e)
+            print(str(e).encode('utf-8'))
             print(f"Warning: Failed to install {package}, roop will not work.")
             raise e
